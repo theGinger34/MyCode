@@ -1,0 +1,34 @@
+//Campbell Schweickhardt
+//This is the data used for this project
+var data = new Array();
+    data["First"] = ["North/South or East/West?","North/South","East/West"]
+    data["North/South"] = ["North or South?","North","South"];
+    data["North"] = ["Do you want a team no one cares about or that no one likes?","No one cares about","No one likes"];
+    data["No one cares about"] = ["A team seriously no one cares obout or one people might care about this year?","Seriously no one cares","People might care about this year"];
+    data["Seriously no one cares"] = ["Cincinnati Bengals"];
+    data["People might care about this year"] = ["Cleveland Browns"];
+    data["No one likes"] = ["Do you care if they like women?","Nah","Yes!"];
+    data["Nah"] = ["Pittsburgh Steelers"];
+    data["Yes!"] = ["Baltimore Ravens"];
+    data["South"] = ["A wild west team or a 'real' NFL team?","Wild west team","'Real' NFL team"];
+    data["Wild west team"] = ["The team that lost Deflategate or just something bigger?","Lost Deflategate","Bigger"];
+    data["Lost Deflategate"] = ["Indianapolis Colts"];
+    data["Bigger"] = ["Houston Texans"];
+    data["'Real' NFL team"] = ["No more animals or why the animal hate?","No more animals","Why the animal hate"];
+    data["Lost Deflategate"] = ["Indianapolis Colts"];
+    data["Bigger"] = ["Houston Texans"];
+    data["East/West"] = ["East or West?","East","West"];
+    data["East"] = ["Make the Super Bowl or just go away?","Make the Super Bowl","Just go away"];
+    data["Make the Super Bowl"] = ["Can they win?","Duh","LOL"];
+    data["Duh"] = ["New England Patriots"];
+    data["LOL"] = ["Buffalo Bills"];
+    data["Just go away"] = ["Plays in the wrong or right state?","Wrong state","Right state"];
+    data["Wrong state"] = ["New York Jets"];
+    data["Right state"] = ["Miami Dolphins"];
+    data["West"] = ["Screw our fans?","Nope","Yeah"];
+    data["Nope"] = ["Thoughts on women beaters?","Love them!","Yeah... no"];
+    data["Love them!"] = ["Kansas City Chiefs"];
+    data["Yeah... no"] = ["Denver Broncos"];
+    data["Yeah"] = ["How far should we move away?","Move north","Differnt state"];
+    data["Move north"] = ["Los Angeles Chargers"];
+    data["Differnt state"] = ["Oakland Raiders"];
