@@ -1,0 +1,165 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEE00"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/replaceAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Replace With A"
+        android:onClick="replaceWithA"
+        app:layout_constraintEnd_toStartOf="@+id/replaceBButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/replaceBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Replace With B"
+        android:onClick="replaceWithB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/replaceAButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add A"
+        android:onClick="addA"
+        app:layout_constraintEnd_toStartOf="@+id/removeAButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replaceAButton" />
+
+    <Button
+        android:id="@+id/removeAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Remove A"
+        android:onClick="removeA"
+        app:layout_constraintEnd_toStartOf="@+id/attachAButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addAButton"
+        app:layout_constraintTop_toBottomOf="@+id/replaceAButton" />
+
+    <Button
+        android:id="@+id/detachAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Detach A"
+        android:onClick="detachA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/attachAButton"
+        app:layout_constraintTop_toBottomOf="@+id/replaceBButton" />
+
+    <Button
+        android:id="@+id/attachAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Attach A"
+        android:onClick="attachA"
+        app:layout_constraintEnd_toStartOf="@+id/detachAButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/removeAButton"
+        app:layout_constraintTop_toBottomOf="@+id/replaceBButton" />
+
+    <Button
+        android:id="@+id/addBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add B"
+        android:onClick="addB"
+        app:layout_constraintEnd_toStartOf="@+id/removeBButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAButton" />
+
+    <Button
+        android:id="@+id/removeBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Remove B"
+        android:onClick="removeB"
+        app:layout_constraintEnd_toStartOf="@+id/popAddBButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/addBButton"
+        app:layout_constraintTop_toBottomOf="@+id/removeAButton" />
+
+    <Button
+        android:id="@+id/popAddBButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Pop Add B"
+        android:onClick="popAddB"
+        app:layout_constraintEnd_toStartOf="@+id/backButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/removeBButton"
+        app:layout_constraintTop_toBottomOf="@+id/detachAButton" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Back"
+        android:onClick="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/popAddBButton"
+        app:layout_constraintTop_toBottomOf="@+id/detachAButton" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addBButton">
+
+        <FrameLayout
+            android:id="@+id/group"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFEEEE"
+            ></FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#EEEEFF">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
